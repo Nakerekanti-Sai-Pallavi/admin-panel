@@ -1,8 +1,9 @@
-const backendUrl = "https://fsd-iasa.onrender.com"; // replace with your Render backend if different
+const backendUrl = "https://fsd-1-q44k.onrender.com"; // final backend
 
 async function loadUsers() {
-  const tableBody = document.querySelector("#usersTable tbody");
+  const tableBody = document.getElementById("usersTableBody");
   const errorMsg = document.getElementById("errorMsg");
+
   try {
     const res = await fetch(`${backendUrl}/api/users`);
     const users = await res.json();

@@ -1,4 +1,4 @@
-const backendUrl = "https://fsd-iasa.onrender.com"; // backend URL
+const backendUrl = "https://fsd-1-q44k.onrender.com"; // final backend
 
 async function loadOrders() {
   const tableBody = document.querySelector("#ordersTable tbody");

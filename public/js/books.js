@@ -1,4 +1,4 @@
-const backendUrl = "https://fsd-1-q44k.onrender.com"; // your backend
+const backendUrl = "https://fsd-1-q44k.onrender.com"; // final backend
 
 async function loadBooks() {
   const tableBody = document.querySelector("#booksTable tbody");
@@ -34,10 +34,9 @@ async function deleteBook(id) {
   if (!confirm("Are you sure you want to delete this book?")) return;
 
   try {
-    const res = await fetch(`https://your-admin-backend-url.onrender.com/api/books/${id}`, {
-  method: "DELETE"
-});
-
+    const res = await fetch(`${backendUrl}/api/books/${id}`, {
+      method: "DELETE"
+    });
 
     if (res.ok) {
       loadBooks(); // reload after delete
