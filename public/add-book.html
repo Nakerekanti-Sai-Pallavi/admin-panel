@@ -1,0 +1,29 @@
+<!-- public/add-book.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Book - Admin Panel</title>
+  <link rel="stylesheet" href="styles/books.css" />
+</head>
+<body>
+  <header>
+    <h1>➕ Add New Book</h1>
+    <a href="books.html" class="back-button">⬅ Back to Books</a>
+  </header>
+
+  <main>
+    <form id="addBookForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="author" placeholder="Author" required />
+      <input type="number" id="price" placeholder="Price" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="text" id="image" placeholder="Image URL" />
+      <button type="submit">Add Book</button>
+    </form>
+    <p id="message"></p>
+  </main>
+
+  <script src="js/add-book.js"></script>
+</body>
+</html>
