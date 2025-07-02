@@ -10,13 +10,15 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 // API routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/orders', require('./routes/orders'));
 app.use('/api/books', require('./routes/books'));
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Serve admin dashboard on root
 app.get('/', (req, res) => {
