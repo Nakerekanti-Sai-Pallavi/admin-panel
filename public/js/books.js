@@ -1,5 +1,6 @@
-const backendUrl = "https://fsd-1-q44k.onrender.com"; // final backend
+const backendUrl = "https://fsd-1-q44k.onrender.com"; // ✅ Correct backend URL
 
+// Load all books and display them
 async function loadBooks() {
   const tableBody = document.querySelector("#booksTable tbody");
   const errorMsg = document.getElementById("errorMsg");
@@ -30,6 +31,7 @@ async function loadBooks() {
   }
 }
 
+// Delete book by ID
 async function deleteBook(id) {
   if (!confirm("Are you sure you want to delete this book?")) return;
 
@@ -39,7 +41,7 @@ async function deleteBook(id) {
     });
 
     if (res.ok) {
-      loadBooks(); // reload after delete
+      loadBooks(); // Reload after delete
     } else {
       alert("Failed to delete the book.");
     }
