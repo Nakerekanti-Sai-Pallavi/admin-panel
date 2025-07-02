@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin - Books</title>
+  <link rel="stylesheet" href="styles/books.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Manage Books</h1>
+    <a href="dashboard.html" class="back-button">⬅ Back to Dashboard</a>
+  </header>
+
+  <main>
+    <table id="booksTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price (₹)</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p id="errorMsg" class="error"></p>
+  </main>
+
+  <script src="js/books.js"></script>
+</body>
+</html>

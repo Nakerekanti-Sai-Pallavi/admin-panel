@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin - Orders</title>
+  <link rel="stylesheet" href="styles/orders.css" />
+</head>
+<body>
+  <header>
+    <h1>📦 All Orders</h1>
+    <a href="dashboard.html" class="back-button">⬅ Back to Dashboard</a>
+  </header>
+
+  <main>
+    <table id="ordersTable">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Email</th>
+          <th>Books</th>
+          <th>Total (₹)</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p id="errorMsg" class="error"></p>
+  </main>
+
+  <script src="js/orders.js"></script>
+</body>
+</html>
